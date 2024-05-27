@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Wizard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="https://i.imgur.com/jNqGfuE.png" alt="Card Wizard Logo" class="logo" onclick="goHome()">
+    </header>
+
+    <main>
+        <form id="searchForm" class="poetsen-one-regular">
+            <label for="keywords">Keywords:</label>
+            <input type="text" id="keywords" name="keywords" required><br><br>
+
+            <label for="cardCondition">Card Condition:</label>
+            <select id="cardCondition" name="cardCondition">
+                <option value="all">All</option>
+                <option value="graded">Graded</option>
+                <option value="ungraded">Ungraded</option>
+            </select><br><br>
+
+            <label for="listingType">Listing Type:</label>
+            <select id="listingType" name="listingType">
+                <option value="all">All</option>
+                <option value="auction">Auction</option>
+                <option value="fixed">Fixed Price</option>
+            </select><br><br>
+
+            <label for="negativeKeywords">Negative Keywords:</label>
+            <input type="text" id="negativeKeywords" name="negativeKeywords"><br><br>
+
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="searchIcon" style="display: none;">🔍</div>
+        
+        <div id="sortingContainer">
+            <div class="side-container left">
+                <img src="https://i.imgur.com/A6fo9T9.png" alt="Uninterested" class="side-image">
+                <p class="side-text">Uninterested</p>
+            </div>
+            <div id="resultsContainer"></div>
+            <div class="side-container right">
+                <img src="https://i.imgur.com/TIbOIMK.png" alt="Interested" class="side-image">
+                <p class="side-text">Interested</p>
+            </div>
+        </div>
+        <div id="interestedItemsContainer" style="display: none;"></div>
+        
+        <button id="viewInterestedItems">View Interested Items</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

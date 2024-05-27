@@ -1,0 +1,133 @@
+body {
+    font-family: 'Poetsen One', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #c6c3b4; /* Light grey background for contrast */
+}
+
+header {
+    background-color: #00274d; /* Navy blue */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the logo */
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 0; /* Adjust padding for minimal space */
+}
+
+header h1 {
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+header .logo {
+    height: auto;
+    max-height: 250px; /* Limit the height of the logo */
+    padding: 5px 0; /* Adjust padding for minimal space */
+    cursor: pointer;
+    margin: 0 auto; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff; /* White background for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+
+}
+
+#sortingContainer {
+    display: flex;
+    justify-content: space-between; /* Space the side containers to the sides */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.side-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px; /* Adjust the size as needed */
+    text-align: center;
+    padding: 0 20px; /* Add padding to push to the outskirts */
+}
+
+.side-image {
+    width: 100px; /* Adjust the size as needed */
+    height: 125px;
+    display: none; /* Initially hidden */
+}
+
+.side-text {
+    display: none; /* Initially hidden */
+}
+
+#resultsContainer, #interestedItemsContainer {
+    width: 100%;
+    max-width: 600px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: transform 0.2s; /* Animation for zoom effect */
+    background-color: #fff;
+    box-shadow: 0 0 15px navy; 
+
+}
+
+.card img {
+    width: auto; /* Keep the original width */
+    height: auto; /* Keep the original height */
+    max-width: 100%; /* Ensure it fits within the container */
+    transition: transform 0.2s; /* Animation for zoom effect */
+}
+
+.card img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+button {
+    margin: 5px;
+    background-color: #00274d; /* Navy blue */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004080; /* Slightly lighter navy blue */
+}
+
+#viewInterestedItems {
+    margin-top: 20px;
+}
+
+.poetsen-one-regular {
+    font-family: 'Poetsen One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
