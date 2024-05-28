@@ -1,4 +1,5 @@
 # CardWizard
+CSS has not been a priority, mainly worked on API integration and functionality first.
 work in progress as of 5/26 fully functioning on localhost, having trouble migrating to github pages
 state as of 5/28:
 
