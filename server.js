@@ -33,7 +33,7 @@ app.post('/search', (req, res) => {
         listingTypeFilter = '&filter=buyingOptions:{FIXED_PRICE}';
     }
 
-    const searchUrl = `https://api.ebay.com/buy/browse/v1/item_summary/search?q=${encodeURIComponent(keywords)}${listingTypeFilter}&limit=50`;
+    const searchUrl = `https://api.ebay.com/buy/browse/v1/item_summary/search?q=${encodeURIComponent(keywords)}${listingTypeFilter}&limit=10`;
 
     console.log(`Sending request to eBay with URL: ${searchUrl}`);
 
